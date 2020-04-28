@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testSendMessage1</title>
+</head>
+<body>
+<div id="meetbot-widget-discount-nre"></div>
+</body>
+<script>
+    if (!window.bhAsyncInit) {
+        window.bhAsyncInit = [];
+    }
+    else if (!Array.isArray(window.bhAsyncInit)) {
+        window.bhAsyncInit = [window.bhAsyncInit];
+    }
+
+    window.bhAsyncInit.push(function() {
+        window.BH.init({
+            debug: false,
+            language: "en_US",
+            clientAppID: '270202583150184',
+            renderImmediately: true,
+            pageId: '103856837930641',
+            widgets: [{id:'meetbot-widget-checkbox-nrg', type:'Checkbox', size:'xlarge', centerAlign : false, skin : 'light', hideAfterChecked:-1, allowLogin:true, origin:'https://us-m.patpat.com/'},{id:'meetbot-widget-checkbox-nrb', type:'Checkbox', size:'standard', centerAlign : false, skin : 'light', hideAfterChecked:-1, allowLogin:true, origin:'https://messenger.meetbot.biz'},{id:'meetbot-widget-customerchat-nmm', type:'Customerchat', themeColor:'#26D1DD', loggedInGreeting:'in hi', loggedOutGreeting:'out hi', greetingDialogDisplay:'hide', greetingDialogDelay:'0'},{id:'meetbot-widget-discount-nru', title:'Get 15% off from your order', subtitle : 'Reveal discount to our Messenger list:', type:'Discount', discountText:'Your discount code:', discountCode : 'GET5', showCodeBtnText : 'Get Discount Now', copyCodeBtnText:'Copy the Code', hideAfterChecked:-1, origin:'https://us-m.patpat.com', discount : '15%', align:'center'},{id:'meetbot-widget-discount-nrc', title:'Get 15% off from your order', subtitle : 'Reveal discount to our Messenger list:', type:'Discount', discountText:'Your discount code:', discountCode : 'GET5', showCodeBtnText : 'Get Discount Now', copyCodeBtnText:'Copy the Code', hideAfterChecked:-1, origin:'https://messenger.meetbot.biz', discount : '15%', align:'center'},{id:'meetbot-widget-discount-nre', title:'Get 15% off from your order', subtitle : 'Reveal discount to our Messenger list:', type:'Discount', discountText:'Your discount code:', discountCode : 'GET5', showCodeBtnText : 'Get Discount Now', copyCodeBtnText:'Copy the Code', hideAfterChecked:-1, origin:'https://us-m.patpat.com/', discount : '15%', align:'center'},{id:'meetbot-widget-messageus-nmj', type:'MessageUs', color:'blue', size:'large'},{id:'meetbot-widget-sendtomessenger-nra', type:'SendToMessenger', color:'blue', size:'large', enforceLogin : false, ctaText:'LET_ME_KNOW'}]
+        });
+    });
+
+    (function(d){
+        var js, id = 'meetbot-jssdk'; if (d.getElementById(id)) {return;}
+        js = d.createElement('script'); js.id = id;
+        js.async = true; js.src = "https://meetbot.oss-cn-hongkong.aliyuncs.com/sdk/sdk-3.0.1.js";
+        d.getElementsByTagName('head')[0].appendChild(js);
+    }(document));
+</script>
+</html>
