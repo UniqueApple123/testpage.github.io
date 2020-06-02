@@ -51,8 +51,8 @@
          */
         var dataChart = new gapi.analytics.googleCharts.DataChart({
             query: {
-                metrics: 'ga:sessions,ga:adClicks,ga:searchResultViews',
-                dimensions: 'ga:date',
+                metrics: 'ga:sessions,ga:adClicks',
+                dimensions: 'ga:date,ga:source',
                 'start-date': '30daysAgo',
                 'end-date': 'yesterday'
             },
